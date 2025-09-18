@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Search Page with Logo</title>
+  <title>Login Page with Logo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
       align-items: center;
       height: 100vh;
     }
-    .search-box {
+    .login-box {
       background-color: #fff;
       padding: 30px;
       border-radius: 10px;
@@ -20,45 +20,44 @@
       width: 320px;
       text-align: center;
     }
-    .search-box img {
+    .login-box img {
       width: 80px;
       margin-bottom: 20px;
     }
-    .search-box h2 {
+    .login-box h2 {
       margin-bottom: 20px;
     }
-    .search-box input[type="text"] {
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-    .search-box input[type="submit"] {
+    .login-box input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #28a745;
+      background-color: #007bff;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    .search-box input[type="submit"]:hover {
-      background-color: #218838;
+    .login-box input[type="submit"]:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="search-box">
-    <img src="logo.jpg" alt="Logo">
-    <h2>Search</h2>
-    <form action="https://formsubmit.co/raziavahab06@gmail.com " method="POST">
-      <input type="text" name="search" placeholder="Type your query..." required>
-      <input type="submit" value="Submit">
-
-      <!-- Optional hidden fields -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://raziavahab06.github.io/thankyou.html">
+  <div class="login-box">
+    <!-- Replace the src value with your logo URL -->
+    <img src="https://via.placeholder.com/80" alt="Logo">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
     </form>
   </div>
 </body>
