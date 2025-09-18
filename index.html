@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login Page with Logo</title>
+  <title>Search Page with Logo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
       align-items: center;
       height: 100vh;
     }
-    .login-box {
+    .search-box {
       background-color: #fff;
       padding: 30px;
       border-radius: 10px;
@@ -20,44 +20,45 @@
       width: 320px;
       text-align: center;
     }
-    .login-box img {
+    .search-box img {
       width: 80px;
       margin-bottom: 20px;
     }
-    .login-box h2 {
+    .search-box h2 {
       margin-bottom: 20px;
     }
-    .login-box input[type="text"],
-    .login-box input[type="password"] {
+    .search-box input[type="text"] {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-    .login-box input[type="submit"] {
+    .search-box input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #007bff;
+      background-color: #28a745;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    .login-box input[type="submit"]:hover {
-      background-color: #0056b3;
+    .search-box input[type="submit"]:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <div class="login-box">
-    <!-- Replace the src value with your logo URL -->
+  <div class="search-box">
     <img src="logo.jpg" alt="Logo">
-    <h2>Login</h2>
-    <form action="/login" method="post">
-      <input type="text" name="username" placeholder="Username" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <input type="submit" value="Login">
+    <h2>Search</h2>
+    <form action="https://formsubmit.co/raziavahab06@gmail.com " method="POST">
+      <input type="text" name="search" placeholder="Type your query..." required>
+      <input type="submit" value="Submit">
+
+      <!-- Optional hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://github.com/Raziavahab06/thankyou.html">
     </form>
   </div>
 </body>
